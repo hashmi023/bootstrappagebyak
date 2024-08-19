@@ -1,0 +1,277 @@
+/* index and Themes pages css  */
+
+*body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+/* index page css */
+
+
+/* header start */
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+}
+header ul{
+ display: flex;
+ gap: 20px;
+ list-style: none;
+ padding: 20px;
+}
+header ul li a{
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover{
+  color: yellow;
+}
+
+
+/* main section start */
+.bg{
+  background-image: url(/media/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+.main-section{
+  
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.main-section h2::after{
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  height: 5px;
+  background-color: brown;
+  width: 50px;
+}
+.main-section p{
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* footer start */
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+  height: 300px;
+}
+footer ul{
+ display: flex;
+ gap: 20px;
+ list-style: none;
+ padding: 20px;
+}
+footer .links{
+  margin-top: 40px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: white;
+
+}
+footer ul li a:hover{
+  color: yellow;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+    box-sizing: border-box;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Themes page start */
+.slider{
+  margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.slider h1{
+  font-size: 80px;
+  color: blueviolet;
+}
+.slider button{
+  margin-top: 25px;
+  padding: 20px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+}
+.slider button:hover{
+  color: yellow;
+}
+/* slider section end */
+
+/* themes section start */
+.thems-items {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: white;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  width: calc(48% - 4em);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Themes section end */
+
+/* toggle button for responsive */
+.toggle-button{
+  display: none;
+
+}
+.toggle-label{
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/* page 3 icons page css */
+
+.article-section{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.article-section h1{
+  font-size: 60px;
+  font-family: cursive;
+}
+.article-section p{
+  font-size: 28px;
+}
+.article-section button{
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  border-radius: 40px;
+}
+.article-section button a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+.article-section button:hover{
+  background-color: blueviolet;
+  color: black;
+}
+.article-section button a:hover{
+  color: yellow;
+}
+/* article section eend */
+ 
+/* navbar */
+.navbar{
+  margin-top: 100px;
+}
+.navbar ul{
+  display: flex;
+  gap: 20px;
+}
+/* navbar end */
+/* icons section start */
+.icons-input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* page 3 end icons css */
+
+
+    /* responsiveness for index and themes page */
+/* responsive css */
+@media screen and (max-width:768px) {
+  .container{
+    width: 100%;
+  }
+  header{
+    text-align: center;
+    background-color: black;
+  }
+  
+  .toggle-label{
+    display: block;
+  }
+  .nav{
+    display: none;
+    width: 100px;
+  }
+  .toggle-button:checked + .toggle-label +.nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav li{
+    padding: 1rem;
+    text-align: center;
+  }
+  .slider{
+    display: block;
+    text-align: center;
+  }
+  .slider button{
+    background-color: black;
+  }
+  .thems-items{
+    display: block;
+    
+  }
+  .item{
+    width: 90%;
+  }
+  footer{
+    display: block;
+    padding: 20px 10px;
+    background-color: black;
+    height: auto;
+  }
+  
+}
